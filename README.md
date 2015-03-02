@@ -2,6 +2,7 @@
 上海科技大学网络自动验证登录器
 
 EZNetLoginer
+
 作者：吕文涛
 环境：Linux/Mac OS X/Windows/Android/UNIX Like
 语言：Python 2.5+
