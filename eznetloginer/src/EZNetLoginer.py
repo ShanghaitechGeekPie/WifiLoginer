@@ -115,7 +115,7 @@ try:
 					print u'连接失败！请确认网络已经连接'
 				else:
 					print u'Connection Failed! Is the network available?'
-					break
+				break
 			else:
 				response_data = response.read()
 				response_data_json = json.loads(response_data)
