@@ -1,55 +1,53 @@
 #!/usr/bin/env python2
 #coding=utf8
- 
 import httplib, urllib
 import string, random
 import json
 import getpass
 import time
 import sys
+import ConfigParser
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 
-#======================================================
-#自动登录请输入账号密码，留空将询问
-username = ''
-password = ''
-#======================================================
-#语言
-lang = 'EN'
-#======================================================
+with open('./user.conf','a+') as f:
+	pass
+with open('./user.conf','r') as f:
+	if f.read()=='':
+		#还没有配置
+		print 'choose language: EN or ZH'
+		lang = raw_input('')
+		print ''
+		if lang == 'EN':
+			print u'ShanghaiTech EZNetLoginer'
+			print u'Developer : eastpiger (Lv Wentao) , SIST , ShanghaiTech University'
+			print u'Under development'
+			print u'username'
+			username = raw_input('')
+			print u'password'
+			passowrd = getpass.getpass('')
 
-print ''
-if lang == 'ZH':
-	print u'上海科技大学 校园网络自动登录助手'
-	print u'开发:上海科技大学 信息科学与技术学院 吕文涛'
-	print u'开发版本，严禁外传'
-else:
-	print u'ShanghaiTech EZNetLoginer'
-	print u'Developer : eastpiger (Lv Wentao) , SIST , ShanghaiTech University'
-	print u'Under development'
-	
-print u'========================================'
-httpClient = None
-try:
-	if username == '':
-		if lang == 'ZH':
+		else:
+			print u'上海科技大学 校园网络自动登录助手'
+			print u'开发:上海科技大学 信息科学与技术学院 吕文涛'
+			print u'开发版本，严禁外传'
 			print u'请输入登录账号：',
-		else:
-			print u'Username:',
-		username = raw_input('')
-	if password == '':
-		if lang == 'ZH':
-			print u'请输入登录密码（密码并不会在此处显示，请直接输入即可）：',
-		else:
-			print u'Password:',
-		password = getpass.getpass('')
-	if lang == 'ZH':
-		print u'读取到账号。'
+			username = raw_input('')
+			print u'请输入登录密码'
+			password = getpass.getpass('')
 	else:
-		print u'account got.'
-	print u'========================================'
+		cf = ConfigParser.ConfigParser()
+		cf.read('./user.conf')
+		username = cf.get('user','username')
+		password = cf.get('user','password')
+		lang = cf.get('user','lang')
 
+with open('./user.conf','w') as f:
+	f.write('[user]\nusername = '+ username + '\npassword = '+ password + '\nlang = '+lang)
+
+httpClient = None
+
+try:
 	while True:
 		#======================================================
 		#Define
