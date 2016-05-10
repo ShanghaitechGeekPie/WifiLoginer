@@ -3,7 +3,7 @@ echo "Shanghaitech Login Shell"
 echo "上科大登陆器shell版本"
 num=$#
 if [ "$num" = "2" ]; then
-       result=` curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -s --data "userName=$1&password=$2&hasValidateCode=false&authLan=zh_CN"  --cookie "JSESSIONI$
+       result=` curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -s --data "userName=$1&password=$2&hasValidateCode=false&authLan=zh_CN"  --cookie "JSESSIONID=D56359E00B58C7877668AAB44B3BFE31"  https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action`
         resultSucess=`echo "$result" | sed "s/.*success\W*\(\w*\)\W*total.*/\1/g"`
         #echo "$resultSucess"
         if [ "$resultSucess"x = "true"x ]; then
