@@ -74,3 +74,13 @@ https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\
 ```
 ./shtech.sh 用户名 密码
 ```
+
+3.用wget
+wget支持下载的时候认证，所以也可以用来做认证
+
+```shell
+wget --header="Content-Type: application/x-www-form-urlencoded"  \
+--header="Cookie:JSESSIONID=D56359E00B58C7877668AAB44B3BFE31"    \
+--post-data="userName=(用户名)&password=（密码）&hasValidateCode=false&authLan=zh_CN" \
+https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action \
+```
