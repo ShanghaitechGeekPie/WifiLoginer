@@ -15,6 +15,7 @@ import random
 import json
 import os
 import time
+import signal
 
 def check_internet(url="http://www.baidu.com", timeout=1):
     try:
@@ -67,7 +68,12 @@ def get_argparser():
                                                                                          "internet connection.")
     return confparser
 
+def signal_handler(signal, frame):
+    print("\nCaptured SIGINT signal, exit.")
+    exit(0)
+
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, signal_handler)
     parser = get_argparser()
     argsdict = vars(parser.parse_args())
     if argsdict["generate_config"] is not None:
