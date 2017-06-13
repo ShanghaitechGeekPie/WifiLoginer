@@ -32,7 +32,7 @@ def shtlogin(username, pwd):
          'd', 'c', 'b', 'a', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], 32)).replace(' ', '')
     headers = {'Content-type': 'application/x-www-form-urlencoded'
         , 'Accept': '*/*', 'Cookie': 'JSESSIONID=' + cookie_code}
-    httpClient = http.client.HTTPSConnection('controller.shanghaitech.edu.cn', 8445, timeout=30)
+    httpClient = http.client.HTTPSConnection('controller1.net.shanghaitech.edu.cn', 8445, timeout=30)
     try:
         httpClient.request('POST', '/PortalServer/Webauth/webAuthAction!login.action', params, headers)
     except:
