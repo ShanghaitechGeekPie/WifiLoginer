@@ -62,7 +62,7 @@
 curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -v --data \
 "userName=(你的用户名)&password=(你的密码)&hasValidateCode=false&authLan=zh_CN"  \
 --cookie "JSESSIONID=D56359E00B58C7877668AAB44B3BFE31" \
-https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action
+https://controller1.net.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action
 ```
 
 2.Shell 脚本:
@@ -78,7 +78,7 @@ wget支持下载的时候认证，所以也可以用来做认证
 wget --header="Content-Type: application/x-www-form-urlencoded"  \
 --header="Cookie:JSESSIONID=D56359E00B58C7877668AAB44B3BFE31"    \
 --post-data="userName=(用户名)&password=（密码）&hasValidateCode=false&authLan=zh_CN" \
-https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action \
+https://controller1.net.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action \
 ```
 ----------
 

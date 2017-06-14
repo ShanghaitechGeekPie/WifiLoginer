@@ -55,7 +55,7 @@ try:
 		cookie_code = string.join(random.sample(['z','y','x','w','v','u','t','s','r','q','p','o','n','m','l','k','j','i','h','g','f','e','d','c','b','a','1','2','3','4','5','6','7','8','9','0'], 32)).replace(' ','')
 		headers = {'Content-type': 'application/x-www-form-urlencoded'
 						, 'Accept': '*/*','Cookie':'JSESSIONID=' + cookie_code}
-		httpClient = httplib.HTTPSConnection('controller.shanghaitech.edu.cn', 8445, timeout=30)
+		httpClient = httplib.HTTPSConnection('controller1.net.shanghaitech.edu.cn', 8445, timeout=30)
 		#======================================================
 
 		if lang == 'ZH':

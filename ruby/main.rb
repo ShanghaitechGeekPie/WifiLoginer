@@ -2,7 +2,7 @@ require 'net/http'
 require 'securerandom'
 # require 'net/https'
 
-basePath = "https://controller.shanghaitech.edu.cn:8445/PortalServer"
+basePath = "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer"
 loginAction = "/Webauth/webAuthAction!login.action"
 
 def encodeURIComponent(string)
