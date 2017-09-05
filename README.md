@@ -59,10 +59,10 @@
 1.命令行下直接：
 
 ```shell
-curl -H "Content-Type: application/x-www-form-urlencoded" -X POST -v --data \
+curl -k -H "Content-Type: application/x-www-form-urlencoded" -X POST -v --data \
 "userName=(你的用户名)&password=(你的密码)&hasValidateCode=false&authLan=zh_CN"  \
 --cookie "JSESSIONID=D56359E00B58C7877668AAB44B3BFE31" \
-https://controller1.net.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action
+https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\!login.action
 ```
 
 2.Shell 脚本:
