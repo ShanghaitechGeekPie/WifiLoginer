@@ -47,7 +47,7 @@ def login(username, password):
     return result_obj
 
 def sync(ipAddr, sessionID, XSRF_TOKEN):
-    url = 'https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!syncPortalAuthResult.action'
+    url = 'https://controller.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!syncPortalAuthResult.action'
     data = {'clientIp': ipAddr,
             'browserFlag': 'zh'}
     postdata = urllib.parse.urlencode(data).encode('utf-8')
