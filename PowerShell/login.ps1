@@ -2,7 +2,7 @@
 Clear-Host
 
 $version = "2.1"
-$loginurl = "https://controller1.net.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction!login.action"
+$loginurl = "https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction!login.action"
 #loginurl = "https://10.15.44.172:8445/PortalServer//Webauth/webAuthAction!login.action"
 
 Write-Host "----------------------------------------------" -ForegroundColor "green"
