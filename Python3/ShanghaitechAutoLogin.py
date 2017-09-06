@@ -25,7 +25,7 @@ def getRandomString(n = 32):
 def login(username, password):
     if username is None or password is None:
         raise IncompleteFieldException()
-    url = 'https://controller1.net.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!login.action'
+    url = 'https://controller.shanghaitech.edu.cn:8445/PortalServer/Webauth/webAuthAction!login.action'
     data = {'userName': username,
             'password': password,
             'hasValidateCode': 'false',
