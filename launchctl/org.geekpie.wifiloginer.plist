@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" \
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ShanghaiTechWiFiLoginer</string>
+  <key>LowPriorityIO</key>
+  <true/>
+  <key>ProgramArguments</key>
+  <array>
+  <string>/usr/local/bin/shtechlogin</string>
+  </array>
+  <key>WatchPaths</key>
+  <array>
+  <string>/etc/resolv.conf</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/var/log/shtechlogin.log</string>
+  <key>StandardErrorPath</key>
+  <string>/var/log/shtechlogin.log</string>
+</dict>
+</plist>

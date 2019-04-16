@@ -45,7 +45,7 @@
 
 --------
 
-### **CURL** 
+### **CURL**
 
 作者：邓岂
 
@@ -108,3 +108,37 @@ https://controller.shanghaitech.edu.cn:8445/PortalServer//Webauth/webAuthAction\
 2. 保持连接
 3. 账号密码的本地存储（交互式）
 4. 优雅的配色
+
+---
+
+### **launchd**
+
+作者：荆玉琢
+
+环境：macOS (only), 欢迎 port 到 systemd
+
+语言：shell & launchd
+
+1. 连上 Wi-Fi 后自动判断是否为ShanghaiTech，并自动进行登录
+2. 可设定重试次数
+
+使用方式：
+
+1. 先用你最喜欢的编辑器打开`launchd/shtechlogin` 文件，修改`username`和`password`变量，然后在命令行中
+
+```shell
+chmod +x shtechlogin
+cp shtechlogin /usr/local/bin/shtechlogin
+```
+
+此时若`/usr/local/bin/` 在`PATH` 中，则可直接通过命令行运行`shtechlogin` 进行一次性登录
+
+2. 将服务文件添加到系统launchd托管
+
+```shell
+cp org.geekpie.wifiloginer.plist ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
+launchctl load ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
+```
+
+此后每次接入ShanghaiTech都会自动进行登录，生成的log文件在`/var/log/shtechlogin.log`。
+
