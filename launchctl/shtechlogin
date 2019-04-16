@@ -1,0 +1,37 @@
+#!/bin/bash
+# @Author: robertking
+# @Date:   2018-12-18 03:46:45
+# @Last Modified by:   robertking
+# @Last Modified time: 2018-12-18 04:38:45
+
+
+airport=/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
+maxretries=5
+delaytime=1.0
+
+username=''
+password=''
+
+date
+
+for retry in `seq $maxretries`; do
+    ssid=$($airport -I | awk '/ SSID:/ { print $2 }')
+    if [[ $ssid == "" ]]; then
+        if [[ $retry == $maxretries ]]; then
+            echo Get empty SSID after $maxretries retries.
+        else
+            sleep $delaytime
+        fi
+    elif [[ $ssid == "ShanghaiTech" ]]; then
+        echo Login to ShanghaiTech get following response:
+        curl -s --max-time 4 -k -H "Content-Type: application/x-www-form-urlencoded" -X POST --data "userName=${username}&password=${password}&hasValidateCode=false&authLan=zh_CN" https://10.15.44.172:8445/PortalServer//Webauth/webAuthAction\!login.action
+        retval=$?
+        echo
+        printf "Exit value ${retval} means "
+        [ $retval -eq 0 ] && echo success. || echo failure.
+        break
+    else
+        echo SSID is $ssid.
+        break
+    fi
+done
