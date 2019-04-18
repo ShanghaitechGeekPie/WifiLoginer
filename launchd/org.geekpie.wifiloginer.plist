@@ -18,8 +18,8 @@
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>
-  <string>/var/log/shtechlogin.log</string>
+  <string>/Users/WHOAMI/Library/Logs/shtechlogin.log</string>
   <key>StandardErrorPath</key>
-  <string>/var/log/shtechlogin.log</string>
+  <string>/Users/WHOAMI/Library/Logs/shtechlogin.log</string>
 </dict>
 </plist>

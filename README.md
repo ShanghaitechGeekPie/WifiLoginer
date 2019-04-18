@@ -136,9 +136,9 @@ cp shtechlogin /usr/local/bin/shtechlogin
 2. 将服务文件添加到系统launchd托管
 
 ```shell
-cp org.geekpie.wifiloginer.plist ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
+sed "s/WHOAMI/$(whoami)/g" org.geekpie.wifiloginer.plist > ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
 launchctl load ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
 ```
 
-此后每次接入ShanghaiTech都会自动进行登录，生成的log文件在`/var/log/shtechlogin.log`。
+此后每次接入ShanghaiTech都会自动进行登录，生成的log文件在`~/Library/Logs/shtechlogin.log`，可以用Console.app进行查看。
 
