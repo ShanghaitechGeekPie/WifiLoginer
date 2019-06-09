@@ -1,0 +1,83 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "babel"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "babel/generator-star-spacing": 1,
+    "babel/array-bracket-spacing": 1,
+    "babel/object-curly-spacing": 0,
+    "babel/object-shorthand": 1,
+    "babel/arrow-parens": 0,
+    "babel/no-await-in-loop": 1,
+    "babel/flow-object-type": 1,
+    "babel/func-params-comma-dangle": 1,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "new-cap": 0,
+    "global-require": 0,
+    "react/no-multi-comp": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    "comma-dangle": 0, // not sure why airbnb turned this on. gross!
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "react/jsx-boolean-value": 0,
+    "consistent-return": 0,
+    "no-unused-vars": 0,
+    "no-confusing-arrow": 0,
+    "no-underscore-dangle": 0,
+    "no-console": 1,
+    "no-alert": 0,
+    "max-len": 0,
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 4
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "prefer-template": 0,
+    "react/prefer-stateless-function": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ]
+  }
+}
