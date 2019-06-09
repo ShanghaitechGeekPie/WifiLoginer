@@ -1,0 +1,36 @@
+{
+  "name": "loginer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "release-unix": "cd android && gradle assembleRelease && cp ./android/app/build/outputs/apk/app-release.apk ./loginer.apk",
+    "release": "cd android && gradle assembleRelease && npm run cp-win",
+    "cp-win": "copy .\\android\\app\\build\\outputs\\apk\\app-release.apk .\\loginer.apk"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "core-decorators": "^0.14.0",
+    "make-random-string": "^1.0.5",
+    "react": "^15.1.0",
+    "react-native": "^0.27.2",
+    "react-native-material-design": "^0.3.6",
+    "react-native-material-kit": "^0.3.2",
+    "react-native-progress": "^3.1.0",
+    "react-native-simple-store": "^1.1.0",
+    "when": "^3.7.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "chai": "^3.5.0",
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb": "^10.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-graphql": "^0.2.4",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0"
+  }
+}
