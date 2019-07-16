@@ -23,7 +23,7 @@
 ### **WifiLoginer**
 作者：陈宸
 
-环境：Linux/Mac OS X/Windows（不建议）/UNIX Like
+环境：OS with ruby
 
 语言：Ruby
 
