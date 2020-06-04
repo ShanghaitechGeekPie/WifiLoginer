@@ -142,3 +142,31 @@ launchctl load ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
 
 此后每次接入ShanghaiTech都会自动进行登录，生成的log文件在`~/Library/Logs/shtechlogin.log`，可以用Console.app进行查看。
 
+---
+
+### **Auth-esp32-to-ShanghaiTech-wifi**
+
+repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-wifi
+
+作者：徐博文
+
+环境：ESP32（arduino框架，去掉freertos部分大概可以port到其他支持arduino框架的板子上）
+
+语言：C++
+
+| 函数 | 用途 |
+|  ----  | ----  |
+| connect_to_ShanghaiTech() | 连接ShanghaiTech并验证 |
+| connect_to_eduroam() | 连接eduroam并验证 |
+| check_internet_connectivity() | 检查互联网连接 |
+
+使用方式：
+
+1. * 使用PlatformIO管理dependency  
+     *此lib已提交registry，正等待moderation*  
+   * 您亦可手动管理dependency  
+
+2. 按需要引入头文件并调用相关函数，见examples文件夹内的样例  
+   * ```#include <ShanghaiTechWifiAuth.h>``` for SSID:ShanghaiTech authentication  
+   * ```#include <eduroam.h>``` for eduroam authentication  
+   * ```#include <connectivity_util.h>``` for simple connectivity check  
