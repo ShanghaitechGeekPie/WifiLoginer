@@ -146,7 +146,10 @@ launchctl load ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
 
 ### **Auth-esp32-to-ShanghaiTech-wifi**
 
-repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-wifi
+[![PlatformIO library registry](https://img.shields.io/badge/PIOlibrary-%237415-brightgreen)](https://platformio.org/lib/show/7415/ShanghaiTech%20WiFi%20Auth)  
+
+**Github repo** - [Auth-esp32-to-ShanghaiTech-wifi](https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-wifi)  
+**PlatformIO** - [ShanghaiTech WiFi Auth by Luxcoldury](https://platformio.org/lib/show/7415/ShanghaiTech%20WiFi%20Auth)
 
 作者：徐博文
 
@@ -156,15 +159,14 @@ repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-w
 
 | 函数 | 用途 |
 |  ----  | ----  |
-| connect_to_ShanghaiTech() | 连接ShanghaiTech并验证 |
-| connect_to_eduroam() | 连接eduroam并验证 |
-| check_internet_connectivity() | 检查互联网连接 |
+| ```connect_to_ShanghaiTech()``` | 连接ShanghaiTech并验证 |
+| ```connect_to_eduroam()``` | 连接eduroam并验证 |
+| ```check_internet_connectivity()``` | 检查互联网连接 |
 
 使用方式：
 
-1. * 使用PlatformIO管理dependency  
-     *此lib已提交registry，正等待moderation*  
-   * 您亦可手动管理dependency  
+1. * **通过PlatformIO引入依赖** - [ShanghaiTech WiFi Auth by Luxcoldury](https://platformio.org/lib/show/7415/ShanghaiTech%20WiFi%20Auth/installation)
+   * 您亦可手动引入此library
 
 2. 按需要引入头文件并调用相关函数，见examples文件夹内的样例  
    * ```#include <ShanghaiTechWifiAuth.h>``` for SSID:ShanghaiTech authentication  
