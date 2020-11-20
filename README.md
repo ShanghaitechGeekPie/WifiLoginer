@@ -177,7 +177,8 @@ repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-w
 
 **Author**: Kiruya Momochi\
 **Language**: PowerShell Core\
-**Environment**: Windows PowerShell or PowerShell Core
+**Environment**: Windows PowerShell or PowerShell Core\
+**Features**: Credential saving, Heartbeat, Auto relogin
 
 #### Install
 
