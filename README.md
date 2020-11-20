@@ -170,3 +170,24 @@ repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-w
    * ```#include <ShanghaiTechWifiAuth.h>``` for SSID:ShanghaiTech authentication  
    * ```#include <eduroam.h>``` for eduroam authentication  
    * ```#include <connectivity_util.h>``` for simple connectivity check  
+
+---
+
+### **ShanghaiTechLogin**
+
+**Author**: Kiruya Momochi\
+**Language**: PowerShell Core\
+**Environment**: Windows PowerShell or PowerShell Core\
+**Features**: Credential saving, Heartbeat, Auto relogin
+
+#### Install
+
+```powershell
+Install-Module ShanghaiTechLogin
+```
+
+#### Basic Usage
+
+```powershell
+stulogin
+```
