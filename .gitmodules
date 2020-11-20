@@ -1,0 +1,3 @@
+[submodule "PowerShellCore"]
+	path = PowerShellCore
+	url = https://github.com/KiruyaMomochi/ShanghaiTechLogin
