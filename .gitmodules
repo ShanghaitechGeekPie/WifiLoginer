@@ -1,3 +1,6 @@
 [submodule "PowerShellCore"]
 	path = PowerShellCore
 	url = https://github.com/KiruyaMomochi/ShanghaiTechLogin
+[submodule "Auth-esp32-to-ShanghaiTech-wifi"]
+	path = Auth-esp32-to-ShanghaiTech-wifi
+	url = https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-wifi.git
