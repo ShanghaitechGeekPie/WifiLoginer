@@ -146,8 +146,6 @@ launchctl load ~/Library/LaunchAgents/org.geekpie.wifiloginer.plist
 
 ### **Auth-esp32-to-ShanghaiTech-wifi**
 
-repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-wifi
-
 作者：徐博文
 
 环境：ESP32（arduino框架，去掉freertos部分大概可以port到其他支持arduino框架的板子上）
@@ -163,7 +161,7 @@ repo链接：https://github.com/ShanghaitechGeekPie/Auth-esp32-to-ShanghaiTech-w
 使用方式：
 
 1. * 使用PlatformIO管理dependency  
-     *此lib已提交registry，正等待moderation*  
+     PlatformIO - [ShanghaiTech WiFi Auth by Luxcoldury](https://platformio.org/lib/show/7415/ShanghaiTech%20WiFi%20Auth/installation)
    * 您亦可手动管理dependency  
 
 2. 按需要引入头文件并调用相关函数，见examples文件夹内的样例  
