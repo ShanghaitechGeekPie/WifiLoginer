@@ -189,3 +189,23 @@ Install-Module ShanghaiTechLogin
 ```powershell
 stulogin
 ```
+
+---
+
+### Shanghaitech-Loginer-APP
+
+**Author**: 林一二 https://github.com/linonetwo \
+**Language**: JavaScript\
+**Environment**: Android or iOS\
+**Features**: Credential saving, Heartbeat, Auto relogin(从吕文涛的脚本里抄的）
+
+#### Install
+
+```powershell
+npm i
+npm run release
+```
+
+#### Basic Usage
+
+通过 RN 直接安装到通过数据线连着电脑的手机上。
