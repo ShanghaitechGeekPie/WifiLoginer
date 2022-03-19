@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iYR-Jp-H0q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="white"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FUd-QZ-y1L">
+                                <rect key="frame" x="0.0" y="69" width="414" height="493"/>
+                                <color key="backgroundColor" name="bg"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="上海科技大学" translatesAutoresizingMaskIntoConstraints="NO" id="64w-zZ-NgC">
+                                <rect key="frame" x="61" y="404" width="292" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xiO-FP-6Ek">
+                                <rect key="frame" x="114" y="170.5" width="186" height="185"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海科技大学" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mx-BU-cxn">
+                                <rect key="frame" x="131" y="577" width="152" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络登录器" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igk-5B-zNO">
+                                <rect key="frame" x="143.5" y="622" width="127" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="IPT-jU-z11">
+                                <rect key="frame" x="0.0" y="562" width="414" height="284"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="igk-5B-zNO" firstAttribute="top" secondItem="6mx-BU-cxn" secondAttribute="bottom" constant="15" id="0MS-nk-EcU"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Ef-c3-RCb"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="top" secondItem="64w-zZ-NgC" secondAttribute="bottom" constant="30" id="3XV-WD-DAG"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="top" secondItem="FUd-QZ-y1L" secondAttribute="bottom" id="4Cc-Bl-SZ5"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Az-PX-TER"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FUd-QZ-y1L" secondAttribute="trailing" id="ANV-Wk-oaH"/>
+                            <constraint firstItem="6mx-BU-cxn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AW0-AJ-Ccd"/>
+                            <constraint firstAttribute="bottom" secondItem="IPT-jU-z11" secondAttribute="bottom" constant="50" id="CMl-ah-ltq"/>
+                            <constraint firstAttribute="bottom" secondItem="iYR-Jp-H0q" secondAttribute="bottom" id="CmB-6X-4qG"/>
+                            <constraint firstItem="xiO-FP-6Ek" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F65-I9-kvj"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IMz-1w-Ih4"/>
+                            <constraint firstAttribute="trailing" secondItem="iYR-Jp-H0q" secondAttribute="trailing" id="JZ4-gN-5uj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FUd-QZ-y1L" secondAttribute="bottom" constant="300" id="QXy-UY-58R"/>
+                            <constraint firstItem="iYR-Jp-H0q" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Taz-Dl-Gp8"/>
+                            <constraint firstItem="FUd-QZ-y1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UpN-Nj-cyx"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XeE-g9-6DH"/>
+                            <constraint firstItem="igk-5B-zNO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aFd-sA-75B"/>
+                            <constraint firstItem="IPT-jU-z11" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="doR-fG-vsq"/>
+                            <constraint firstItem="6mx-BU-cxn" firstAttribute="top" secondItem="FUd-QZ-y1L" secondAttribute="bottom" constant="15" id="nT7-zH-nk6"/>
+                            <constraint firstItem="xiO-FP-6Ek" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-185" id="sAD-cf-Viw"/>
+                            <constraint firstItem="64w-zZ-NgC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sNv-CL-CD0"/>
+                            <constraint firstItem="64w-zZ-NgC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="20" id="t2T-DA-BH7"/>
+                            <constraint firstItem="iYR-Jp-H0q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xLU-yD-2gb"/>
+                            <constraint firstItem="FUd-QZ-y1L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="yiF-QE-JTG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg2" width="636.66668701171875" height="398"/>
+        <image name="logo" width="186" height="185"/>
+        <image name="上海科技大学" width="292" height="74"/>
+        <namedColor name="bg">
+            <color red="0.61599999666213989" green="0.039000000804662704" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
