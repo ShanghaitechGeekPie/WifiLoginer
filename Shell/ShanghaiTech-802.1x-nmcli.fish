@@ -4,6 +4,7 @@
 set student_id   "for example 2090335114"
 set ids_password 'your password for https://ids.shanghaitech.edu.cn/'
 
+nmcli connection delete ShanghaiTech
 nmcli connection add \
 	type wifi \
 	con-name "ShanghaiTech" \
